@@ -104,14 +104,14 @@ class MainGame:
 		self.spaceShip.blitme()
 		for bullet in self.bullets.sprites():
 			bullet.draw_bullet()
-		self.aliens.draw(self.mainScreen)
+		#self.aliens.draw(self.mainScreen)
 
 	def runGame(self):
 		while True:
 			self._checkEvent()
 			self.spaceShip.update()
 			self._update_bullets()
-			self._update_aliens()
+			#self._update_aliens()
 			self._updateScreen()
 			pygame.display.flip()
 
